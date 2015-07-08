@@ -88,7 +88,7 @@ if (!empty($_GET['error'])) {
 
 <td width="350"> Isi Web
 </td></tr>
-<tr><td colspan="2" height="100"> <img src="Gambar.jpg" height="100" width="600" /></td></tr>
+<tr><td colspan="2" height="100"> <img src="Gambar.jpg" height="100" width="900" /></td></tr>
 </table>
 </body>
 </html>
