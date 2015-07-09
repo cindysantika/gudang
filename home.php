@@ -7,7 +7,7 @@ if (!empty($_SESSION['username'])) {
 ?>
 <html>
 <head>
-<title>Contoh Web Company Profile </title>
+<title>Stok Gudang </title>
 </head>
 <body>
 <table border="1" align="center" width="800">
