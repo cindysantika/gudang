@@ -11,9 +11,9 @@ if (!empty($_SESSION['username'])) {
 </head>
 <body>
 <table border="1" align="center" width="800">
-<tr><td colspan="2" height="200"><img src="capture.jpg" height="100" width="600" /></td></tr>
+<tr><td colspan="2" height="200"><img src="img/header.jpg" height="300" width="900" /></td></tr>
 <tr><td colspan="2" height="25">
-<marquee behavior = "alternate">Selamat Datang DiWebsite PT.PLN (PERSERO) P3B </marquee></td></tr>
+<marquee behavior = "alternate">Selamat Datang Di Website PT.PLN (PERSERO) P3B </marquee></td></tr>
 
 <tr><td width="200" height="350"><title>LOGIN</title>
 <link rel="stylesheet" href="css/style_login.css" type="text/css"/>
