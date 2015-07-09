@@ -15,7 +15,7 @@ if (!empty($_SESSION['username'])) {
 <tr><td colspan="2" height="25">
 <marquee behavior = "alternate">Selamat Datang Di Website PT.PLN (PERSERO) P3B </marquee></td></tr>
 
-<tr><td width="200" height="350"><title>LOGIN</title>
+<tr><td colspan="1" width="200" height="350"><title>LOGIN</title>
 <link rel="stylesheet" href="css/style_login.css" type="text/css"/>
 </head>
 
@@ -85,7 +85,8 @@ if (!empty($_GET['error'])) {
 </table>
 </form>
 </td>
-<td height= "200" width="500"> 
+<tr>
+<td colspan= "1" width="500" height= "100"> 
 <style type='text/css'>
     #slideshow img
     {
