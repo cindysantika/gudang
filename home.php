@@ -85,7 +85,7 @@ if (!empty($_GET['error'])) {
 </table>
 </form>
 </td>
-<td width="500"> fdbdgtdhtfyhfhfgfhgjmgjhghfhg
+<td width="500"> 
 <style type='text/css'>
     #slideshow img
     {
