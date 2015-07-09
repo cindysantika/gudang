@@ -85,8 +85,7 @@ if (!empty($_GET['error'])) {
 </table>
 </form>
 </td>
-
-<td width="350"> Isi Web
+<td width="500"> fdbdgtdhtfyhfhfgfhgjmgjhghfhg
 <style type='text/css'>
     #slideshow img
     {
