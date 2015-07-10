@@ -12,26 +12,26 @@ include('cek-login.php');
 <h1>Form Input Data</h1>
 
 <?php 
-$id = $_GET['id'];
+$id = $_GET['NIP'];
 
-$query = mysql_query("select * from user where user_id='$id'") or die(mysql_error());
+$query = mysql_query("select * from user where NIP='$NIP'") or die(mysql_error());
 
 $data = mysql_fetch_array($query);
 ?>
 
 <form name="update_data" action="update.php" method="post">
-<input type="hidden" name="user_id" value="<?php echo $id; ?>" />
+<input type="hidden" name="NIP" value="<?php echo $id; ?>" />
 <table border="0" cellpadding="5" cellspacing="0">
     <tbody>
     	<tr>
-        	<td>Username</td>
+        	<td>NAMA_PETUGAS</td>
         	<td>:</td>
-        	<td><input type="text" name="username" maxlength="20" required="required" value="<?php echo $data['username']; ?>" disabled /></td>
+        	<td><input type="text" name="NAMA_PETUGAS" maxlength="20" required="required" value="<?php echo $data['NAMA_PETUGAS']; ?>" disabled /></td>
         </tr>
     	<tr>
         	<td>Password</td>
         	<td>:</td>
-        	<td><input type="password" name="password" maxlength="20" required="required" value="<?php echo $data['password']; ?>" /></td>
+        	<td><input type="USERNAME" name="password" maxlength="20" required="required" value="<?php echo $data['password']; ?>" /></td>
         </tr>
     	<tr>
         	<td>Fullname</td>

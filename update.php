@@ -2,15 +2,14 @@
 include('config.php');
 
 //tangkap data dari form
-$id = $_POST['user_id'];
-$password = $_POST['password'];
-$fullname = $_POST['fullname'];
-$email = $_POST['email'];
-$agama = $_POST['agama'];
-$no_hp = $_POST['no_hp'];
+$NIP = $_POST['NIP'];
+$NAMA_PETUGAS = $_POST['NAMA_PETUGAS'];
+$USERNAME = $_POST['USERNAME'];
+$PASSWORD = $_POST['PASSWORD'];
+$JABATAN = $_POST['JABATAN'];
 
 //update data di database sesuai user_id
-$query = mysql_query("update user set password='$password', fullname='$fullname', email='$email', agama='$agama', no_hp='$no_hp' where user_id='$id'") or die(mysql_error());
+$query = mysql_query("update user set NAMA_PETUGAS='$NAMA_PETUGAS', USERNAME='$USERNAME', PASSWORD='$PASSWORD', JABATAN='$JABATAN' where NIP='$NIP'") or die(mysql_error());
 
 if ($query) {
 	header('location:view.php?message=success');

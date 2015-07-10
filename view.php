@@ -24,13 +24,11 @@ if (!empty($_GET['message']) && $_GET['message'] == 'success') {
 <table border="1" cellpadding="5" cellspacing="0">
 	<thead>
     	<tr>
-        	<td>No.</td>
-        	<td>Username</td>
-        	<td>Password</td>
-        	<td>Email</td>
-        	<td>Fullname</td>
-        	<td>Agama</td>
-        	<td>No. HP</td>
+        	<td>NIP</td>
+			<td>NAMA_PETUGAS</td>
+        	<td>USERNAME</td>
+        	<td>PASSWORD</td>
+        	<td>JABATAN</td>
         	<td>Opsi</td>
         </tr>
     </thead>
@@ -43,15 +41,14 @@ if (!empty($_GET['message']) && $_GET['message'] == 'success') {
 	?>
     	<tr>
         	<td><?php echo $no; ?></td>
-        	<td><?php echo $data['username']; ?></td>
-        	<td><?php echo $data['password']; ?></td>
-        	<td><?php echo $data['email']; ?></td>
-        	<td><?php echo $data['fullname']; ?></td>
-        	<td><?php echo $data['agama']; ?></td>
-        	<td><?php echo $data['no_hp']; ?></td>
+        	<td><?php echo $data['NIP']; ?></td>
+        	<td><?php echo $data['NAMA_PETUGAS']; ?></td>
+        	<td><?php echo $data['USERNAMEl']; ?></td>
+        	<td><?php echo $data['PASSWORD']; ?></td>
+			<td><?php echo $data['JABATAN']; ?></td>
             <td>
-            	<a href="edit.php?id=<?php echo $data['user_id']; ?>">Edit</a> || 
-                <a href="delete.php?id=<?php echo $data['user_id']; ?>">Hapus</a>
+            	<a href="edit.php?id=<?php echo $data['NIP']; ?>">Edit</a> || 
+                <a href="delete.php?id=<?php echo $data['NIP']; ?>">Hapus</a>
             </td>
         </tr>
     <?php 
