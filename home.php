@@ -2,7 +2,7 @@
 session_start();
 
 if (!empty($_SESSION['username'])) {
-	header('location:index.php');
+	header('location:home.php');
 }
 ?>
 <html>
