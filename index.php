@@ -21,34 +21,29 @@ echo "Selamat Datang <strong>".$_SESSION['username']."</strong>";
 <table border="0" cellpadding="5" cellspacing="0">
     <tbody>
     	<tr>
-        	<td>Username</td>
+        	<td>NIP</td>
         	<td>:</td>
-        	<td><input type="text" name="username" maxlength="20" required="required" /></td>
+        	<td><input type="text" name="NIP" maxlength="20" required="required" /></td>
         </tr>
     	<tr>
-        	<td>Password</td>
+        	<td>NAMA_PETUGAS</td>
         	<td>:</td>
-        	<td><input type="password" name="password" maxlength="20" required="required" /></td>
+        	<td><input type="password" NAMA_PETUGAS="password" maxlength="20" required="required" /></td>
         </tr>
     	<tr>
-        	<td>Fullname</td>
+        	<td>USERNAME</td>
         	<td>:</td>
-        	<td><input type="text" name="fullname" maxlength="100" required="required" /></td>
+        	<td><input type="text" name="USERNAME" maxlength="100" required="required" /></td>
         </tr>
     	<tr>
-        	<td>Email</td>
+        	<td>PASSWORD</td>
         	<td>:</td>
-        	<td><input type="email" name="email" required="required" /></td>
+        	<td><input type="email" name="PASSWORD" required="required" /></td>
         </tr>
     	<tr>
-        	<td>Agama</td>
+        	<td>JABATAN</td>
         	<td>:</td>
-        	<td><input type="text" name="agama" required="required" /></td>
-        </tr>
-    	<tr>
-        	<td>Nomor HP</td>
-        	<td>:</td>
-        	<td><input type="text" name="no_hp" maxlength="14" required="required" /></td>
+        	<td><input type="text" name="JABATAN" required="required" /></td>
         </tr>
         <tr>
         	<td align="right" colspan="3"><input type="submit" name="submit" value="Simpan" /></td>

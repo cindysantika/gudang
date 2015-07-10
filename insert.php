@@ -3,15 +3,14 @@
 include('config.php');
 
 //tangkap data dari form
-$username = $_POST['username'];
-$password = $_POST['password'];
-$fullname = $_POST['fullname'];
-$email = $_POST['email'];
-$agama = $_POST['agama'];
-$no_hp = $_POST['no_hp'];
+$NIP = $_POST['NIP'];
+$NAMA_PETUGAS = $_POST['NAMA_PETUGAS'];
+$USERNAME = $_POST['USERNAME'];
+$PASSWORD = $_POST['PASSWORD'];
+$JABATAN = $_POST['JABATAN'];
 
 //simpan data ke database
-$query = mysql_query("insert into user values('', '$username', '$password', '$email', '$fullname', '$agama', '$no_hp')") or die(mysql_error());
+$query = mysql_query("insert into user values('', '$NIP', '$NAMA_PETUGAS', '$USERNAME', '$PASSWORD', '$JABATAN')") or die(mysql_error());
 
 if ($query) {
 	header('location:index.php?message=success');
