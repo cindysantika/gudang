@@ -40,10 +40,9 @@ if (!empty($_GET['message']) && $_GET['message'] == 'success') {
 	while ($data = mysql_fetch_array($query)) {
 	?>
     	<tr>
-        	<td><?php echo $no; ?></td>
         	<td><?php echo $data['NIP']; ?></td>
         	<td><?php echo $data['NAMA_PETUGAS']; ?></td>
-        	<td><?php echo $data['USERNAMEl']; ?></td>
+        	<td><?php echo $data['USERNAME']; ?></td>
         	<td><?php echo $data['PASSWORD']; ?></td>
 			<td><?php echo $data['JABATAN']; ?></td>
             <td>

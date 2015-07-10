@@ -20,7 +20,7 @@ $data = mysql_fetch_array($query);
 ?>
 
 <form name="update_data" action="update.php" method="post">
-<input type="hidden" name="NIP" value="<?php echo $id; ?>" />
+<input type="hidden" name="id" value="<?php echo $id; ?>" />
 <table border="0" cellpadding="5" cellspacing="0">
     <tbody>
     	<tr>
@@ -46,7 +46,12 @@ $data = mysql_fetch_array($query);
     	<tr>
         	<td>Jabatan</td>
         	<td>:</td>
-        	<td><input type="text" name="JABATAN" required="required" value="<?php echo $data['JABATAN']; ?>" /></td>
+					<td>		
+<select name = "Jabatan">
+<option value="Kpl Gudang">Kpl Gudang</option>
+<option value="Spv">Spv</option>
+<option value="Staff">Staff</option>
+</td>
         </tr>
         <tr>
         	<td align="right" colspan="3"><input type="submit" name="submit" value="Simpan" /></td>

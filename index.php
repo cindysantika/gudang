@@ -43,7 +43,12 @@ echo "Selamat Datang <strong>".$_SESSION['username']."</strong>";
     	<tr>
         	<td>JABATAN</td>
         	<td>:</td>
-        	<td><input type="text" name="JABATAN" required="required" /></td>
+        			<td>		
+<select name = "Jabatan">
+<option value="Kpl Gudang">Kpl Gudang</option>
+<option value="Spv">Spv</option>
+<option value="Staff">Staff</option>
+</td>
         </tr>
         <tr>
         	<td align="right" colspan="3"><input type="submit" name="submit" value="Simpan" /></td>
