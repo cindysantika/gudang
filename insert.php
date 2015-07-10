@@ -10,7 +10,7 @@ $PASSWORD = $_POST['PASSWORD'];
 $JABATAN = $_POST['JABATAN'];
 
 //simpan data ke database
-$query = mysql_query("insert into user values('', '$id', '$NAMA_PETUGAS', '$USERNAME', '$PASSWORD', '$JABATAN')") or die(mysql_error());
+$query = mysql_query("insert into user values('$id', '$NAMA_PETUGAS', '$USERNAME', '$PASSWORD', '$JABATAN')") or die(mysql_error());
 
 if ($query) {
 	header('location:index.php?message=success');

@@ -43,15 +43,13 @@ $data = mysql_fetch_array($query);
         	<td>:</td>
         	<td><input type="password" name="PASSWORD" required="required" value="<?php echo $data['PASSWORD']; ?>" /></td>
         </tr>
-    	<tr>
-        	<td>Jabatan</td>
-        	<td>:</td>
-					<td>		
-<select name = "Jabatan">
+   <tr><td>Jabatan</td>
+					  <td>:</td><td><select name="Jabatan" title="Pilih Jabatan">
+<option value="">-- Pilih Jabatan --</option>
 <option value="Kpl Gudang">Kpl Gudang</option>
 <option value="Spv">Spv</option>
 <option value="Staff">Staff</option>
-</td>
+</select></td></tr>
         </tr>
         <tr>
         	<td align="right" colspan="3"><input type="submit" name="submit" value="Simpan" /></td>

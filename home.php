@@ -66,12 +66,13 @@ if (!empty($_GET['error'])) {
                         <td> :
                           <input type="password" class="text" name="password" id="password" /></td>
                       </tr>
-		<td>		
-<select name = "Jabatan">
+					  <tr><td>Jabatan</td>
+					  <td>:</td><td><select name="Jabatan" title="Pilih Jabatan">
+<option value="">-- Pilih Jabatan --</option>
 <option value="Kpl Gudang">Kpl Gudang</option>
 <option value="Spv">Spv</option>
 <option value="Staff">Staff</option>
-</td>
+</select></td></tr>
                         <td colspan="2">
                         <div align="right">
                         <input name="submit"  class="submit" type="submit" value="LOGIN" />

@@ -40,15 +40,13 @@ echo "Selamat Datang <strong>".$_SESSION['username']."</strong>";
         	<td>:</td>
         	<td><input type="password" name="PASSWORD" required="required" /></td>
         </tr>
-    	<tr>
-        	<td>JABATAN</td>
-        	<td>:</td>
-        			<td>		
-<select name = "Jabatan">
+    	<tr><td>Jabatan</td>
+					  <td>:</td><td><select name="Jabatan" title="Pilih Jabatan">
+<option value="">-- Pilih Jabatan --</option>
 <option value="Kpl Gudang">Kpl Gudang</option>
 <option value="Spv">Spv</option>
 <option value="Staff">Staff</option>
-</td>
+</select></td></tr>
         </tr>
         <tr>
         	<td align="right" colspan="3"><input type="submit" name="submit" value="Simpan" /></td>
