@@ -1,2 +1,0 @@
-# gudang
-gudang
