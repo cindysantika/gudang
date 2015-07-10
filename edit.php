@@ -12,9 +12,9 @@ include('cek-login.php');
 <h1>Form Input Data</h1>
 
 <?php 
-$id = $_GET['NIP'];
+$id = $_GET['id'];
 
-$query = mysql_query("select * from user where NIP='$NIP'") or die(mysql_error());
+$query = mysql_query("select * from user where NIP='$id'") or die(mysql_error());
 
 $data = mysql_fetch_array($query);
 ?>
@@ -24,34 +24,29 @@ $data = mysql_fetch_array($query);
 <table border="0" cellpadding="5" cellspacing="0">
     <tbody>
     	<tr>
-        	<td>NAMA_PETUGAS</td>
+        	<td>NIP</td>
         	<td>:</td>
-        	<td><input type="text" name="NAMA_PETUGAS" maxlength="20" required="required" value="<?php echo $data['NAMA_PETUGAS']; ?>" disabled /></td>
+        	<td><input type="text" name="NIP" maxlength="20" required="required" value="<?php echo $data['NIP']; ?>" disabled /></td>
+        </tr>
+    	<tr>
+        	<td>Nama Petugas</td>
+        	<td>:</td>
+        	<td><input type="NAMA_PETUGAS" name="NAMA_PETUGAS" maxlength="20" required="required" value="<?php echo $data['NAMA_PETUGAS']; ?>" /></td>
+        </tr>
+    	<tr>
+        	<td>Username</td>
+        	<td>:</td>
+        	<td><input type="text" name="USERNAME" maxlength="100" required="required" value="<?php echo $data['USERNAME']; ?>" /></td>
         </tr>
     	<tr>
         	<td>Password</td>
         	<td>:</td>
-        	<td><input type="USERNAME" name="password" maxlength="20" required="required" value="<?php echo $data['password']; ?>" /></td>
+        	<td><input type="password" name="PASSWORD" required="required" value="<?php echo $data['PASSWORD']; ?>" /></td>
         </tr>
     	<tr>
-        	<td>Fullname</td>
+        	<td>Jabatan</td>
         	<td>:</td>
-        	<td><input type="text" name="fullname" maxlength="100" required="required" value="<?php echo $data['fullname']; ?>" /></td>
-        </tr>
-    	<tr>
-        	<td>Email</td>
-        	<td>:</td>
-        	<td><input type="email" name="email" required="required" value="<?php echo $data['email']; ?>" /></td>
-        </tr>
-    	<tr>
-        	<td>Agama</td>
-        	<td>:</td>
-        	<td><input type="text" name="agama" required="required" value="<?php echo $data['agama']; ?>" /></td>
-        </tr>
-    	<tr>
-        	<td>Nomor HP</td>
-        	<td>:</td>
-        	<td><input type="text" name="no_hp" maxlength="14" required="required" value="<?php echo $data['no_hp']; ?>" /></td>
+        	<td><input type="text" name="JABATAN" required="required" value="<?php echo $data['JABATAN']; ?>" /></td>
         </tr>
         <tr>
         	<td align="right" colspan="3"><input type="submit" name="submit" value="Simpan" /></td>

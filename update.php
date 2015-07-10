@@ -2,7 +2,7 @@
 include('config.php');
 
 //tangkap data dari form
-$NIP = $_POST['NIP'];
+$id= $_POST['NIP'];
 $NAMA_PETUGAS = $_POST['NAMA_PETUGAS'];
 $USERNAME = $_POST['USERNAME'];
 $PASSWORD = $_POST['PASSWORD'];

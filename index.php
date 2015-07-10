@@ -28,7 +28,7 @@ echo "Selamat Datang <strong>".$_SESSION['username']."</strong>";
     	<tr>
         	<td>NAMA_PETUGAS</td>
         	<td>:</td>
-        	<td><input type="password" NAMA_PETUGAS="password" maxlength="20" required="required" /></td>
+        	<td><input type="text" name="NAMA_PETUGAS" maxlength="20" required="required" /></td>
         </tr>
     	<tr>
         	<td>USERNAME</td>
@@ -38,7 +38,7 @@ echo "Selamat Datang <strong>".$_SESSION['username']."</strong>";
     	<tr>
         	<td>PASSWORD</td>
         	<td>:</td>
-        	<td><input type="email" name="PASSWORD" required="required" /></td>
+        	<td><input type="password" name="PASSWORD" required="required" /></td>
         </tr>
     	<tr>
         	<td>JABATAN</td>
