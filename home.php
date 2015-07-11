@@ -2,7 +2,7 @@
 session_start();
 
 if (!empty($_SESSION['username'])) {
-	header('location:home.php');
+	header('location:cek-login.php');
 }
 ?>
 <html>
