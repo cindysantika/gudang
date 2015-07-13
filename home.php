@@ -8,14 +8,21 @@ if (!empty($_SESSION['username'])) {
 <html>
 <head>
 <title>Stok Gudang </title>
+<style type="text/css">
+<!--
+.style1 {color: #FFFFFF}
+-->
+</style>
 </head>
 <body>
-<table border="1" align="center" width="800">
-<tr><td colspan="2" height="200"><img src="img/header.jpg" height="300" width="900" /></td></tr>
-<tr><td colspan="2" height="25">
-<marquee behavior = "alternate">Selamat Datang Di Website PT.PLN (PERSERO) P3B </marquee></td></tr>
+<table border="1" align="center" width="972">
+<tr><td colspan="2" height="200"><img src="img/header.jpg" height="300" width="965" /></td></tr>
+<tr><td height="25" colspan="2" bgcolor="#0066FF">
+<marquee behavior = "alternate">
+<span class="style1">Selamat Datang Di Website PT.PLN (PERSERO) P3B </span>
+</marquee></td></tr>
 
-<tr><td colspan="1" width="200" height="350"><title>LOGIN</title>
+<tr><td width="369" height="350" colspan="1" bgcolor="#0066FF"><title></title>
 <link rel="stylesheet" href="css/style_login.css" type="text/css"/>
 </head>
 
@@ -42,9 +49,7 @@ if (!empty($_GET['error'])) {
 		<div class="logo clear">
 			<div align="center">
             	<span class="title">
-                <img src="img/login.gif" alt="" width="285" height="80" class="picture" />
-                </span>
-			</div>
+                <img src="img/login.gif" alt="" width="285" height="80" class="picture" />                </span>			</div>
 		</div>
 	</div>
 <form name="login" action="otentikasi.php" method="post">
@@ -67,26 +72,26 @@ if (!empty($_GET['error'])) {
                           <input type="password" class="text" name="password" id="password" /></td>
                       </tr>
 					  <tr><td>Jabatan</td>
-					  <td>:</td><td><select name="Jabatan" title="Pilih Jabatan">
-<option value="">-- Pilih Jabatan --</option>
-<option value="Kpl Gudang">Kpl Gudang</option>
-<option value="Spv">Spv</option>
-<option value="Staff">Staff</option>
-</select></td></tr>
-                        <td colspan="2">
+					  <td>:					    
+					    <select name="Jabatan" title="Pilih Jabatan">
+                          <option value="">-- Pilih Jabatan --</option>
+                          <option value="Kpl Gudang">Kpl Gudang</option>
+                          <option value="Spv">Spv</option>
+                          <option value="Staff">Staff</option>
+                        </select></td><td>&nbsp;</td></tr>
+                        <td height="87" colspan="2">
                         <div align="right">
-                        <input name="submit"  class="submit" type="submit" value="LOGIN" />
+                          <input name="submit"  class="submit" type="submit" value="LOGIN" />
                         </div></td>
                       </tr>
                     </table>
-                  </div>
-                  </td>
+                  </div>                  </td>
                 </tr>
 </select>
 </table>
 </form>
 </td>
-<td width="500"> 
+<td width="587" bgcolor="#0066FF"> 
 <style type='text/css'>
     #slideshow img
     {
@@ -146,13 +151,10 @@ if (!empty($_GET['error'])) {
     });
     </script>
 <div id='slideshow'>
-    <img src='img/1.jpg'>
-    <img src='img/2.jpg'>
-    <img src='img/3.jpg'>
-
-</div>
-</td></tr>
-<tr><td colspan="2" height="100"> <img src="Gambar.jpg" height="100" width="900" /></td></tr>
+    <img src='img/1.jpg'><img src='img/2.jpg'><img src='img/3.jpg'></div></td></tr>
+<tr>
+  <td height="100" colspan="2" bgcolor="#0066FF"><div align="center"><span class="style1">@ copyright || D3 MI B 2013 UNESA</span></div></td>
+</tr>
 </table>
 </body>
 </html>
