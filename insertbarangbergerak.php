@@ -1,0 +1,23 @@
+<?php
+//panggil file config.php untuk menghubung ke server
+include('config.php');
+
+//tangkap data dari form
+$id = $_POST['KODE_BARANG_BERGERAK'];
+$NAMA_BARANG_BERGERAK = $_POST['NAMA_BARANG_BERGERAK'];
+$KETERANGAN_BARANG_BERGERAK = $_POST['KETERANGAN_BARANG_BERGERAK'];
+$MERK_BARANG_BERGERAK = $_POST['MERK_BARANG_BERGERAK];
+$TYPE_BARANG_TETAP= $_POST['TYPE_BARANG_TETAP'];
+$MODEL_BARANG_BERGERAK=$_POST['MODEL_BARANG_BERGERAK'];
+$SATUAN_BARANG_BERGERAK=$_POST['SATUAN_BARANG_BERGERAK'];
+$HARGA_BARANG_BERGERAK=$_POST[' HARGA_BARANG_BERGERAK'];
+$NO_SERI=$_POST['NO_SERI'];
+$PART_NUMBER=$_POST['PART_NUMBER'];
+
+//simpan data ke database
+$query = mysql_query("insert into user values('$id', '$NAMA_BARANG_BERGERAK', '$KETERANGAN_BARANG_BERGERAK', '$MERK_BARANG_BERGERAK', '$TYPE_BARANG_BERGERAK',  '$MODEL_BARANG_BERGERAK',  '$SATUAN_BARANG_BERGERAK', '$HARGA_BARANG_BERGERAK',  '$NO_SERI',  '$PART_NUMBER')") or die(mysql_error());
+
+if ($query) {
+	header('location:index.php?message=success');
+}
+?>

@@ -31,7 +31,7 @@ $data = mysql_fetch_array($query);
     	<tr>
         	<td>Nama Barang Tetap</td>
         	<td>:</td>
-        	<td><input type="text" name="NAMA_BARANG_TETAP" maxlength="20" required="required" value="<?php echo $data['NAMA_PETUGAS']; ?>" /></td>
+        	<td><input type="text" name="NAMA_BARANG_TETAP" maxlength="20" required="required" value="<?php echo $data['NAMA_BARANG_TETAP']; ?>" /></td>
         </tr>
     	<tr>
         	<td>Keterangan Barang Tetap</td>

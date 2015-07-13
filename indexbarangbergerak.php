@@ -21,44 +21,44 @@ echo "Selamat Datang <strong>".$_SESSION['username']."</strong>";
 <table border="0" cellpadding="5" cellspacing="0">
     <tbody>
     	<tr>
-        	<td>Kode Barang Tetap</td>
+        	<td>Kode Barang Bergerak</td>
         	<td>:</td>
-        	<td><input type="text" name="Kode_Barang_Tetap" maxlength="20" required="required" /></td>
+        	<td><input type="text" name="Kode_Barang_Bergerak" maxlength="20" required="required" /></td>
         </tr>
     	<tr>
-        	<td>Nama Barang Tetap</td>
+        	<td>Nama Barang Bergerak</td>
         	<td>:</td>
-        	<td><input type="text" name="NAMA_BARANG_TETAP" maxlength="20" required="required" /></td>
+        	<td><input type="text" name="NAMA_BARANG_BERGERAK" maxlength="20" required="required" /></td>
         </tr>
     	<tr>
-        	<td>Keterangan Barang Tetap</td>
+        	<td>Keterangan Barang Bergerak</td>
         	<td>:</td>
         	<td><input type="text" name="USERNAME" maxlength="100" required="required" /></td>
         </tr>
     	<tr>
-        	<td>Merk Barang Tetap</td>
+        	<td>Merk Barang Bergerak</td>
         	<td>:</td>
-        	<td><input type="text" name="MERK_BARANG_TETAP" maxlength="100" required="required" /></td>
+        	<td><input type="text" name="MERK_BARANG_BERGERAK" maxlength="100" required="required" /></td>
         </tr>
    <tr>
-        	<td>Type Barang Tetap</td>
+        	<td>Type Barang Bergerak</td>
         	<td>:</td>
-        	<td><input type="text" name="TYPE_BARANG_TETAP" maxlength="100" required="required" /></td>
+        	<td><input type="text" name="TYPE_BARANG_BERGERAK" maxlength="100" required="required" /></td>
         </tr>
 		<tr>
-        	<td>Model Barang Tetap</td>
+        	<td>Model Barang Bergerak</td>
         	<td>:</td>
-        	<td><input type="text" name="MODEL_BARANG_TETAP" maxlength="100" required="required" /></td>
+        	<td><input type="text" name="MODEL_BARANG_BERGERAK" maxlength="100" required="required" /></td>
         </tr>
 		<tr>
-        	<td>Satuan Barang Tetap</td>
+        	<td>Satuan Barang Bergerak</td>
         	<td>:</td>
-        	<td><input type="text" name="SATUAN_BARANG_TETAP" maxlength="100" required="required" /></td>
+        	<td><input type="text" name="SATUAN_BARANG_BERGERAK" maxlength="100" required="required" /></td>
         </tr>
 		<tr>
-        	<td>Harga Barang Tetap</td>
+        	<td>Harga Barang Bergerak</td>
         	<td>:</td>
-        	<td><input type="text" name="HARGA_BARANG_TETAP" maxlength="100" required="required" /></td>
+        	<td><input type="text" name="HARGA_BARANG_BERGERAK" maxlength="100" required="required" /></td>
         </tr>
 		<tr>
         	<td>No Seri</td>
@@ -78,7 +78,7 @@ echo "Selamat Datang <strong>".$_SESSION['username']."</strong>";
 </table>
 </form>
 
-<a href="viewbarangtetap.php">Lihat Data</a> ||  <a href="logout.php">Logout</a>
+<a href="viewbarangbergerak.php">Lihat Data</a> ||  <a href="logout.php">Logout</a>
 
 </body>
 </html>

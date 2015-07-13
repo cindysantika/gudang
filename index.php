@@ -26,17 +26,17 @@ echo "Selamat Datang <strong>".$_SESSION['username']."</strong>";
         	<td><input type="text" name="NIP" maxlength="20" required="required" /></td>
         </tr>
     	<tr>
-        	<td>NAMA_PETUGAS</td>
+        	<td>Nama Petugas</td>
         	<td>:</td>
         	<td><input type="text" name="NAMA_PETUGAS" maxlength="20" required="required" /></td>
         </tr>
     	<tr>
-        	<td>USERNAME</td>
+        	<td>Username</td>
         	<td>:</td>
         	<td><input type="text" name="USERNAME" maxlength="100" required="required" /></td>
         </tr>
     	<tr>
-        	<td>PASSWORD</td>
+        	<td>Password</td>
         	<td>:</td>
         	<td><input type="password" name="PASSWORD" required="required" /></td>
         </tr>
@@ -55,7 +55,7 @@ echo "Selamat Datang <strong>".$_SESSION['username']."</strong>";
 </table>
 </form>
 
-<a href="view.php">Lihat Data</a> ||  <a href="logout.php">Logout</a> || <a href="indexbarangtetap.php">Barang Tetap</a>
+<a href="view.php">Lihat Data</a> ||  <a href="logout.php">Logout</a> || <a href="indexbarangtetap.php">Barang Tetap</a> || <a href="indexbarangbergerak.php">Barang Bergerak</a>
 
 </body>
 </html>
