@@ -55,7 +55,7 @@ echo "Selamat Datang <strong>".$_SESSION['username']."</strong>";
 </table>
 </form>
 
-<a href="view.php">Lihat Data</a> ||  <a href="logout.php">Logout</a>
+<a href="view.php">Lihat Data</a> ||  <a href="logout.php">Logout</a> || <a href="indexbarangtetap.php">Barang Tetap</a>
 
 </body>
 </html>

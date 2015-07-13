@@ -1,5 +1,5 @@
 <?php 
-include('panggil.php');
+include('cek-login.php');
 ?>
 <html>
 <head>
@@ -78,7 +78,7 @@ echo "Selamat Datang <strong>".$_SESSION['username']."</strong>";
 </table>
 </form>
 
-<a href="view.php">Lihat Data</a> ||  <a href="logout.php">Logout</a>
+<a href="viewbarangtetap.php">Lihat Data</a> ||  <a href="logout.php">Logout</a>
 
 </body>
 </html>
