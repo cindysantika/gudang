@@ -67,7 +67,7 @@
 
 	<ul class="menu l">
 
-		<li><a href=" index.php" title="Halaman Utama">Beranda</a></li>
+		<li><a href="http://www.blogger.com/blogger.g?blogID=77827092934645996#" title="Halaman Utama">Beranda</a></li>
 
 
 		<li><a href="http://www.blogger.com/blogger.g?blogID=77827092934645996#" title="Informasi Profil">Profil</a>
